@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chenys.mybatisplus.dao.CarinfoDao">
+
+    <resultMap type="com.chenys.mybatisplus.entity.Carinfo" id="CarinfoMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="carnum" column="carNum" jdbcType="VARCHAR"/>
+        <result property="insurancedate" column="insuranceDate" jdbcType="VARCHAR"/>
+        <result property="registerdate" column="registerDate" jdbcType="TIMESTAMP"/>
+        <result property="carstatus" column="carStatus" jdbcType="VARCHAR"/>
+        <result property="carmodel" column="carModel" jdbcType="VARCHAR"/>
+        <result property="isDeleted" column="is_deleted" jdbcType="OTHER"/>
+    </resultMap>
+    
+</mapper>
